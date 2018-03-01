@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.face2face.displaynearbybluetooth.MainActivity">
+
+    <Button
+        android:id="@+id/btEnableBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enableBluetooth"
+        android:text="开启蓝牙"
+
+        />
+
+    <Button
+        android:id="@+id/btDisableBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disableBluetooth"
+        android:text="关闭蓝牙"
+
+        />
+
+    <Button
+        android:id="@+id/startBluetoothDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startBluetoothDisplay"
+        android:text="扫描可用设备"
+
+        />
+
+    <Button
+        android:id="@+id/enableDiscoverability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enableDiscoverability"
+        android:text="开启设备可见"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btEnableBluetoothLocaton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enableBluetoothLocation"
+        android:text="开启定位"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/bluetoothList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</LinearLayout>
